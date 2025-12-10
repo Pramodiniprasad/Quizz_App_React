@@ -1,6 +1,6 @@
 import axios from "axios";
+axios.defaults.headers.common["ngrok-skip-browser-warning"] = "true";
 
-// const BASE = "http://localhost:3000/api";
 const BASE = import.meta.env.VITE_API_BASE;
 
 export const getQuizzes = () => axios.get(`${BASE}/quizzes`);
