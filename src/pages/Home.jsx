@@ -11,15 +11,11 @@ export default function Home() {
               <p className="muted mt-2">Sharpen your skills with short, focused quizzes</p>
             </div>
 
-            <div className="brand-badge">Practice</div>
           </div>
 
           <div className="mt-6">
             <Link to="/quizzes" className="btn-primary inline-block">
               Browse Interviews
-            </Link>
-            <Link to="/quizzes" className="ml-4 btn-ghost inline-block px-4 py-2 rounded">
-              Learn More
             </Link>
           </div>
         </div>
