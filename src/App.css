@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Header accent */
+.app-header {
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+}
+.brand-badge { padding:0.35rem 0.8rem; border-radius:0.65rem; background:linear-gradient(90deg,#5a73ff,#ff8a65); color:white; font-weight:600 }
+
+.big-hero { padding:2.5rem; border-radius:1rem; background: linear-gradient(180deg, rgba(90,115,255,0.08), rgba(255,140,101,0.02)); box-shadow: 0 14px 40px rgba(10,12,30,0.5); }

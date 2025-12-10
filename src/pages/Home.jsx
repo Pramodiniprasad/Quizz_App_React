@@ -2,17 +2,28 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div className="h-screen flex flex-col justify-center items-center bg-gray-100">
-      <h1 className="text-4xl font-bold mb-6 text-gray-800">
-        Welcome to Interview Practice
-      </h1>
+    <div className="min-h-screen flex items-center">
+      <div className="app-container mx-auto">
+        <div className="big-hero p-8">
+          <div className="app-header mb-6">
+            <div>
+              <h1 className="text-4xl font-bold">Welcome to Interview Practice</h1>
+              <p className="muted mt-2">Sharpen your skills with short, focused quizzes</p>
+            </div>
 
-      <Link
-        to="/quizzes"
-        className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition"
-      >
-        Take Interview
-      </Link>
+            <div className="brand-badge">Practice</div>
+          </div>
+
+          <div className="mt-6">
+            <Link to="/quizzes" className="btn-primary inline-block">
+              Browse Interviews
+            </Link>
+            <Link to="/quizzes" className="ml-4 btn-ghost inline-block px-4 py-2 rounded">
+              Learn More
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
